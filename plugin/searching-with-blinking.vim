@@ -18,12 +18,13 @@ function! HLNext(blinktime)
 endfunction
 
 " Toggle search next with blink and without blink
-let s:enabled
+let s:enabled = 0
 
 function! NextMatchToggle()
     if s:enabled
         nnoremap <buffer> n nzz
         nnoremap <buffer> N Nzz
+        let s:enabled = 0
     else
         nnoremap <buffer> n nzz:call HLNext(0.05)<cr>:echo<cr>
         nnoremap <buffer> N Nzz:call HLNext(0.05)<cr>:echo<cr>
