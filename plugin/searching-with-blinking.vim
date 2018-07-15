@@ -20,7 +20,7 @@ endfunction
 " Toggle search next with blink and without blink
 let s:enabled
 
-function! ToggleSearchNextFun()
+function! NextMatchToggle()
     if s:enabled
         nnoremap <buffer> n nzz
         nnoremap <buffer> N Nzz
@@ -31,5 +31,5 @@ function! ToggleSearchNextFun()
     endif
 endfunction
 
-nnoremap <buffer> <localleader>n :call ToggleSearchNextFun()<cr>:echo<cr>
+nnoremap <buffer> <localleader>n :call NextMatchToggle()<cr>:echo<cr>
 
