@@ -21,7 +21,7 @@ endfunction
 let s:enabled = 0
 
 function! NextMatchToggle()
-    if s:enabled = 0
+    if s:enabled
         nnoremap <buffer> n nzz:call HLNext(0.05)<cr>:echo<cr>
         nnoremap <buffer> N Nzz:call HLNext(0.05)<cr>:echo<cr>
         let s:enabled = 1
