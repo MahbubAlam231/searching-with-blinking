@@ -12,7 +12,7 @@ Although blinking is mostly helpful, sometimes one might want to turn blinking o
 
 The following map toggles `n` and `N` between these two behaviours--
 
-    nnoremap <buffer> <localleader>n :call NextMatchToggle()<cr>:echo<cr>
+    nnoremap <buffer> <localleader>nm :call NextMatchToggle()<cr>:echo<cr>
 Put this map in your `.vimrc`. You can, of course, change this mapping at your will.
 
 ## Installation:
