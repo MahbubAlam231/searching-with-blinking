@@ -7,7 +7,6 @@ This plugin remaps `n` and `N` to keep the next match in the middle of the scree
     nnoremap <buffer> n nzvzz:call HLNext(0.05)<cr>:echo<cr>
     nnoremap <buffer> N Nzvzz:call HLNext(0.05)<cr>:echo<cr>
 
-
 Although blinking is mostly helpful, sometimes one might want to turn blinking off and just keep the next match in the middle; especially when one cannot come up with a rigorous search pattern to go to the exact place he/she wants to go, he/she might want to skim through unnecessary matches to find the desired one.
 
 The map `<localleader>nm` toggles `n` and `N` between these two behaviours--
