@@ -1,6 +1,6 @@
 " Maintainer    : Mahbub Alam
 " License       : This file is placed in public domain
-" Version       : 1.1.1
+" Version       : 1.1.2
 " Description   : Blink search pattern when cursor goes there
 
 function! HLNext(blinktime)
@@ -32,3 +32,4 @@ function! NextMatchToggle()
     endif
 endfunction
 
+nnoremap <buffer> <localleader>nm :call NextMatchToggle()<cr>:echo<cr>
