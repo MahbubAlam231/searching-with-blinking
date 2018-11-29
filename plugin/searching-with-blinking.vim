@@ -32,5 +32,3 @@ function! NextMatchToggle()
     endif
 endfunction
 
-nnoremap <buffer> <localleader>nm :call NextMatchToggle()<cr>:echo<cr>
-
